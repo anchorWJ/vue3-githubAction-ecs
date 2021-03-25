@@ -1,1 +1,1 @@
-# Blog_Vue3-Flask-MongoDB
+# Blog_Nuxt-Flask-MongoDB
