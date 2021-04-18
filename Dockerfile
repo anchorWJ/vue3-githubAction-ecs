@@ -1,6 +1,6 @@
 FROM node:latest
 
-COPY ./clirent/vite /app
+COPY ./client/vite /app
 WORKDIR /app
 
 
