@@ -17,9 +17,9 @@
       "entryPoint": null,
       "portMappings": [
         {
-          "hostPort": 3000,
+          "hostPort": 5000,
           "protocol": "tcp",
-          "containerPort": 3000
+          "containerPort": 5000
         }
       ],
       "command": null,
@@ -46,7 +46,7 @@
       "healthCheck": {
         "retries": 3,
         "command": [
-          
+          "sudo docker run -d -p 5000:3000 -d 189970791220.dkr.ecr.ap-northeast-1.amazonaws.com/vue3"
         ],
         "timeout": 5,
         "interval": 30,
