@@ -45,9 +45,7 @@
       "interactive": null,
       "healthCheck": {
         "retries": 3,
-        "command": [
-          "sudo docker run -d -p 5000:3000 -d 189970791220.dkr.ecr.ap-northeast-1.amazonaws.com/vue3"
-        ],
+        "command": [],
         "timeout": 5,
         "interval": 30,
         "startPeriod": null
