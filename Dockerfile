@@ -2,9 +2,9 @@ FROM node:latest
 
 WORKDIR /usr/src/app
 
-COPY ./client/vite /usr/src/app
+COPY ./client/vite ./app
 
-RUN cd /usr/src/app
+RUN cd app
 
 RUN apt-get update -y && \
     apt-get upgrade -y && \
