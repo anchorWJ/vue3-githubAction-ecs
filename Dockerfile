@@ -1,22 +1,13 @@
 FROM node:latest
 
-COPY ./client/vite /app
-WORKDIR /app
+RUN mkdir -p /var/www/app
 
+WORKDIR /var/www/app
 
-ENV DEBCONF_NOWARNINGS yes
-RUN apt-get update -y && \
-    apt-get upgrade -y && \
-    apt-get install -y \
-        build-essential -y \
-        curl \
-        nmap \
-        git \
-        nano \
-    && rm -rf /var/lib/apt/lists/*
+COPY ./client/vite /var/www/app
 
-RUN npm install
+RUN npm run build
 
-EXPOSE 5000
+EXPOSE 3000
 
-CMD ["npm", "run", "dev"]
+ENTRYPOINT ["npm", "run", "serve"]
