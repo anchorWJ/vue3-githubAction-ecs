@@ -2,7 +2,7 @@ FROM node:latest
 
 WORKDIR /app
 
-COPY ./client/vite ./app
+COPY ./client/vite /app
 
 RUN apt-get update -y && \
     apt-get upgrade -y && \
