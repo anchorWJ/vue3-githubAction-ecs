@@ -1,11 +1,11 @@
 FROM node:latest
 
-WORKDIR /usr/src/app
+RUN mkdir -p /var/www/app
 
-COPY ./client/vite /app
+WORKDIR /var/www/app
 
-RUN cd app
-
+COPY ./client/vite ./var/www/app
+RUN cd /var/www/app
 RUN apt-get update -y && \
     apt-get upgrade -y && \
     apt-get install -y \
@@ -20,6 +20,6 @@ RUN npm install
 
 RUN npm run build
 
-EXPOSE 5000
+EXPOSE 3000
 
 ENTRYPOINT ["npm", "run", "serve"]
