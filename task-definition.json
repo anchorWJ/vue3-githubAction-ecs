@@ -46,7 +46,7 @@
       "healthCheck": {
         "retries": 3,
         "command": [
-          "curl http://localhost:5000"
+          
         ],
         "timeout": 5,
         "interval": 30,
