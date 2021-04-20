@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "HOST=0.0.0.0 PORT=3000 vite",
+    "dev": "vite",
     "build": "vite build",
-    "serve": "HOST=0.0.0.0 PORT=3000 vite preview"
+    "serve": "vite preview"
   },
   "dependencies": {
     "ant-design-vue": "^2.1.2",
