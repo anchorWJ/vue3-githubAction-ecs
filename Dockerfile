@@ -2,7 +2,7 @@ FROM node:latest
 
 WORKDIR /usr/src/app
 
-COPY ./client/vite ./app
+COPY ./client/vite /app
 
 RUN cd app
 
