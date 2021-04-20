@@ -1,10 +1,10 @@
 FROM node:latest
 
-RUN mkdir -p /var/www/app
+WORKDIR /usr/src/app
 
-WORKDIR /var/www/app
+COPY ./client/vite /usr/src/app
 
-COPY ./client/vite /var/www/app
+RUN cd /usr/src/app
 
 RUN apt-get update -y && \
     apt-get upgrade -y && \
