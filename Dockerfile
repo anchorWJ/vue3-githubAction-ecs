@@ -20,6 +20,6 @@ RUN npm install
 
 RUN npm run build
 
-EXPOSE 3000
+EXPOSE 5000
 
 ENTRYPOINT ["npm", "run", "serve"]
