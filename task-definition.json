@@ -45,7 +45,7 @@
       "interactive": null,
       "healthCheck": {
         "retries": 3,
-        "command": [],
+        "command": null,
         "timeout": 5,
         "interval": 30,
         "startPeriod": null
