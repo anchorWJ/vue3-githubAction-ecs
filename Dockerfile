@@ -16,8 +16,6 @@ RUN apt-get update -y && \
 
 RUN npm install
 
-COPY ./ ./
-
 RUN npm run build
 
 EXPOSE 5000
