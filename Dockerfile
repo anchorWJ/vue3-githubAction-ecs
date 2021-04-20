@@ -5,7 +5,7 @@ RUN mkdir -p /var/www/app
 WORKDIR /var/www/app
 
 COPY ./client/vite ./var/www/app
-RUN cd /var/www/app
+
 RUN apt-get update -y && \
     apt-get upgrade -y && \
     apt-get install -y \
