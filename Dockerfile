@@ -1,5 +1,7 @@
 FROM node:latest
 
+RUN mkdir app
+
 WORKDIR /app
 
 COPY ./client/vite /app
