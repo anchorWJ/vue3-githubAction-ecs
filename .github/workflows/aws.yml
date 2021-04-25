@@ -78,5 +78,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: Vue3Service
-        cluster: Vue3Cluster
+        cluster: mybolg
         wait-for-service-stability: true
