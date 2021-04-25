@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/vue3-blog",
+          "awslogs-group": "/ecs/myblog",
           "awslogs-region": "ap-northeast-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -64,20 +64,14 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:189970791220:task-definition/vue3-blog:3",
-  "family": "vue3-blog",
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:189970791220:task-definition/myblog:1",
+  "family": "myblog",
   "requiresAttributes": [
     {
       "targetId": null,
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.24"
     },
     {
       "targetId": null,
@@ -113,12 +107,6 @@
       "targetId": null,
       "targetType": null,
       "value": null,
-      "name": "ecs.capability.container-health-check"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
       "name": "ecs.capability.execution-role-ecr-pull"
     },
     {
@@ -140,7 +128,7 @@
   ],
   "networkMode": "awsvpc",
   "cpu": "256",
-  "revision": 3,
+  "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
