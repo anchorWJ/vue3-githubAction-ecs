@@ -26,7 +26,7 @@
 on:
   push:
     branches:
-      - main
+      - dev
 
 name: Deploy to Amazon ECS
 
@@ -78,5 +78,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: Vue3Service
-        cluster: myblog
+        cluster: Vue3Cluster
         wait-for-service-stability: true
