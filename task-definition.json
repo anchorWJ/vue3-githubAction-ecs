@@ -17,9 +17,9 @@
       "entryPoint": null,
       "portMappings": [
         {
-          "hostPort": 5000,
+          "hostPort": 80,
           "protocol": "tcp",
-          "containerPort": 5000
+          "containerPort": 80
         }
       ],
       "command": null,
@@ -64,7 +64,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:189970791220:task-definition/myblog:1",
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:189970791220:task-definition/myblog:9",
   "family": "myblog",
   "requiresAttributes": [
     {
@@ -128,7 +128,7 @@
   ],
   "networkMode": "awsvpc",
   "cpu": "256",
-  "revision": 1,
+  "revision": 9,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
